@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char BurnsAudioVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BurnsAudio/PublicHeader.h>
 
-
+#import <BurnsAudio/MIDIProcessorWrapper.h>
