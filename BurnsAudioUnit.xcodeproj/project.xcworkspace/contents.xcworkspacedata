@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BurnsAudio.xcodeproj">
+      location = "self:/Users/tom/Code/Swift/BurnsAudio/BurnsAudioUnit.xcodeproj">
    </FileRef>
 </Workspace>
