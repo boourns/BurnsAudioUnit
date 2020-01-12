@@ -39,7 +39,7 @@
 }
 
 #pragma mark - fullstate - must override in order to call parameter observer when fullstate is reset.
-- (NSDictionary *)fullStateWithDictionary: (NSDictionary *) parentState {
+- (NSMutableDictionary *)fullStateWithDictionary: (NSDictionary *) parentState {
     NSMutableDictionary *state = [[NSMutableDictionary alloc] initWithDictionary:parentState];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     
@@ -121,7 +121,7 @@
     }
 }
 
-- (NSDictionary *)fullStateForDocumentWithDictionary: (NSDictionary *) parentState {
+- (NSMutableDictionary *)fullStateForDocumentWithDictionary: (NSDictionary *) parentState {
     NSMutableDictionary *state = [[NSMutableDictionary alloc] initWithDictionary:parentState];
     if (_midiProcessor != nil) {
         state[@"midi"] = [NSKeyedArchiver archivedDataWithRootObject:[_midiProcessor settings]];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E23257F623C6E2C50030D9D3 /* MIDIOutput.mm in Sources */ = {isa = PBXBuildFile; fileRef = E23257F523C6E2C50030D9D3 /* MIDIOutput.mm */; };
 		E2C54042238A34DC00143B00 /* BurnsAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C54040238A34DC00143B00 /* BurnsAudioUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2C54084238A350800143B00 /* ModulationEngine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2C54048238A350700143B00 /* ModulationEngine.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2C54085238A350800143B00 /* StateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C54049238A350700143B00 /* StateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +66,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E23257F523C6E2C50030D9D3 /* MIDIOutput.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MIDIOutput.mm; sourceTree = "<group>"; };
+		E23257F723C6E2D30030D9D3 /* MIDIOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDIOutput.h; sourceTree = "<group>"; };
 		E2C5403D238A34DC00143B00 /* BurnsAudioUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BurnsAudioUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C54040238A34DC00143B00 /* BurnsAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BurnsAudioUnit.h; sourceTree = "<group>"; };
 		E2C54041238A34DC00143B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 				E2C54083238A350800143B00 /* StateManager.mm */,
 				E2C54040238A34DC00143B00 /* BurnsAudioUnit.h */,
 				E2C54041238A34DC00143B00 /* Info.plist */,
+				E23257F523C6E2C50030D9D3 /* MIDIOutput.mm */,
+				E23257F723C6E2D30030D9D3 /* MIDIOutput.h */,
 			);
 			path = BurnsAudioUnit;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				E2C5408C238A350800143B00 /* random.cc in Sources */,
 				E2C540B5238A350800143B00 /* AudioBuffers.mm in Sources */,
 				E2C540A5238A350800143B00 /* lfo.cpp in Sources */,
+				E23257F623C6E2C50030D9D3 /* MIDIOutput.mm in Sources */,
 				E2C540A1238A350800143B00 /* units.cc in Sources */,
 				E2C540B4238A350800143B00 /* MIDIProcessorWrapper.mm in Sources */,
 				E2C540AD238A350800143B00 /* resample.c in Sources */,
@@ -539,6 +545,7 @@
 		E2C54046238A34DC00143B00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -565,6 +572,7 @@
 		E2C54047238A34DC00143B00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

@@ -27,9 +27,9 @@ typedef struct {
 - (void) setMIDIProcessor: (MIDIProcessorWrapper *)midiProcessor;
 
 // MARK - State
-- (NSDictionary *)fullStateWithDictionary: (NSDictionary *) parentState;
+- (NSMutableDictionary *)fullStateWithDictionary: (NSDictionary *) parentState;
 - (void)setFullState:(NSDictionary *)fullState;
-- (NSDictionary *)fullStateForDocumentWithDictionary: (NSDictionary *) parentState;
+- (NSMutableDictionary *)fullStateForDocumentWithDictionary: (NSDictionary *) parentState;
 - (void)setFullStateForDocument:(NSDictionary *)fullState;
 - (void) loadDefaultsForName: (NSString *)name;
 - (void) saveDefaultsForName: (NSString *)name;
